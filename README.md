@@ -1,2 +1,2 @@
 # config-tools
-Linux tool configuration
+Linux tools configuration
