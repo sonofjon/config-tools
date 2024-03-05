@@ -1,21 +1,34 @@
-# Use ~~ as the trigger sequence instead of the default **
+### Completion
+
+## Options
+
+# Completion trigger sequence
 export FZF_COMPLETION_TRIGGER='~~'
 
-# Options to fzf command
+# Completion options
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
-# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
-# - The first argument to the function ($1) is the base path to start traversal
-# - See the source code (completion.{bash,zsh}) for the details.
+## Functions
+
+# Custom path completion
+#
+# Use fd for listing path candidates
+# - The first argument to the function ($1) is the base path to start
+#   traversal
+# - See the source code (completion.{bash,zsh}) for the details
 _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
 }
 
+# Custom directory completion
+#
 # Use fd to generate the list for directory completion
 _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
+# Custom command completion
+#
 # Advanced customization of fzf options via _fzf_comprun function
 # - The first argument to the function is the name of the command.
 # - You should make sure to pass the rest of the arguments to fzf.
