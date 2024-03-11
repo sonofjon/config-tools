@@ -21,14 +21,16 @@ export FZF_CTRL_T_OPTS="
   --preview 'cat {}' --preview-window down:5:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-d:reload(find * -type d)'
-  --bind 'ctrl-f:reload(find * -type f)'"
+  --bind 'ctrl-f:reload(find * -type f)'
+  --bind 'ctrl-y:execute-silent(echo -n {1..} | pbcopy)+abort'"
 
 # Alt-C options
 export FZF_ALT_C_OPTS="
   --exact
   --height=10
   --info=hidden
-  --layout=reverse"
+  --layout=reverse
+  --bind 'ctrl-y:execute-silent(echo -n {1..} | pbcopy)+abort'"
 
 # Completion trigger sequence
 # export FZF_COMPLETION_TRIGGER='~~'
