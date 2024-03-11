@@ -1,6 +1,8 @@
 ## Options
 
 # Default options
+#   TODO: pbcopy only works on macOS
+#         Ctrl-\ does not work on WSL
 export FZF_DEFAULT_OPTS="
   --exact
   --height=10
@@ -11,6 +13,7 @@ export FZF_DEFAULT_OPTS="
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
 # Ctrl-R options
+#   TODO: Fix prompt
 export FZF_CTRL_R_OPTS="
   --exact
   --height=10
@@ -28,7 +31,7 @@ export FZF_CTRL_T_OPTS="
   --height=10
   --info=hidden
   --layout=reverse
-  --preview 'cat {}' --preview-window down:5:hidden:wrap
+  --preview 'cat {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-d:reload(find * -type d)'
   --bind 'ctrl-f:reload(find * -type f)'
