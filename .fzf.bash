@@ -38,6 +38,8 @@ export FZF_CTRL_T_OPTS="
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-d:reload(find * -type d)'
   --bind 'ctrl-f:reload(find * -type f)'
+  --bind 'ctrl-s:become(emacs -nw {})'
+  --bind 'ctrl-v:become(vim {} < /dev/tty > /dev/tty)'
   --bind 'ctrl-y:execute-silent(echo -n {1..} | pbcopy)+abort'"
 
 # Alt-C options
