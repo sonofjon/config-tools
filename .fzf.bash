@@ -4,6 +4,7 @@
 export FZF_CTRL_R_OPTS="
   --height=10
   --info=hidden
+  --layout=reverse
   --preview 'echo {}' --preview-window up:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
@@ -12,6 +13,7 @@ export FZF_CTRL_R_OPTS="
 export FZF_CTRL_T_OPTS="
   --height=10
   --info=hidden
+  --layout=reverse
   --preview 'cat {}' --preview-window down:5:hidden:wrap
   --bind 'ctrl-/:toggle-preview'"
 
@@ -19,6 +21,7 @@ export FZF_CTRL_T_OPTS="
 export FZF_ALT_C_OPTS="
   --height=10
   --info=hidden
+  --layout=reverse"
 
 # Completion trigger sequence
 # export FZF_COMPLETION_TRIGGER='~~'
