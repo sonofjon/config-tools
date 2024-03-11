@@ -2,6 +2,7 @@
 
 # Ctrl-R options
 export FZF_CTRL_R_OPTS="
+  --exact
   --height=10
   --info=hidden
   --layout=reverse
@@ -12,6 +13,7 @@ export FZF_CTRL_R_OPTS="
 
 # Ctrl-T options
 export FZF_CTRL_T_OPTS="
+  --exact
   --height=10
   --info=hidden
   --layout=reverse
@@ -22,6 +24,7 @@ export FZF_CTRL_T_OPTS="
 
 # Alt-C options
 export FZF_ALT_C_OPTS="
+  --exact
   --height=10
   --info=hidden
   --layout=reverse"
