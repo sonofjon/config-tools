@@ -15,7 +15,9 @@ export FZF_CTRL_T_OPTS="
   --info=hidden
   --layout=reverse
   --preview 'cat {}' --preview-window down:5:hidden:wrap
-  --bind 'ctrl-/:toggle-preview'"
+  --bind 'ctrl-/:toggle-preview'
+  --bind 'ctrl-d:reload(find * -type d)'
+  --bind 'ctrl-f:reload(find * -type f)'"
 
 # Alt-C options
 export FZF_ALT_C_OPTS="
