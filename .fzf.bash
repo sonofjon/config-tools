@@ -16,14 +16,14 @@ export FZF_DEFAULT_OPTS="
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
 # Ctrl-R options
-#   TODO: Fix prompt
+#   TODO: Fix prompt (note that FZF_CTRL_R_OPTS is evaluated only once!)
 export FZF_CTRL_R_OPTS="
   --exact
   --height=10
   --info=hidden
   --layout=reverse
   --nth=2..
-  --prompt='$USER at $HOSTNAME in $(pwd | sed "s,/home/$USER,~,g")$ '
+  --prompt='$USER at `hostname -s` in $(pwd | sed "s,$HOME,~,g")$ '
   --preview 'echo {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
