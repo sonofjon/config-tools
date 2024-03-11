@@ -11,7 +11,7 @@ export FZF_DEFAULT_OPTS="
   --height=10
   --info=hidden
   --layout=reverse
-  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --preview 'echo {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
@@ -24,7 +24,7 @@ export FZF_CTRL_R_OPTS="
   --layout=reverse
   --nth=2..
   --prompt='$USER at $HOSTNAME in $(pwd | sed "s,/home/$USER,~,g")$ '
-  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --preview 'echo {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
