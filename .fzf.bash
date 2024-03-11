@@ -6,6 +6,7 @@ export FZF_CTRL_R_OPTS="
   --height=10
   --info=hidden
   --layout=reverse
+  --nth=2..
   --prompt='$USER at $HOSTNAME in $(pwd | sed "s,/home/$USER,~,g")$ '
   --preview 'echo {}' --preview-window up:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
