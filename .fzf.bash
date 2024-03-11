@@ -6,6 +6,7 @@
 # Default options
 #   TODO: pbcopy only works on macOS
 #         Ctrl-\ does not work on WSL
+#         Completion after aliases: ll, em
 export FZF_DEFAULT_OPTS="
   --exact
   --height=10
@@ -17,6 +18,7 @@ export FZF_DEFAULT_OPTS="
 
 # Ctrl-R options
 #   TODO: Fix prompt (note that FZF_CTRL_R_OPTS is evaluated only once!)
+#         Toggle hidden files
 export FZF_CTRL_R_OPTS="
   --exact
   --height=10
