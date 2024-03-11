@@ -1,5 +1,8 @@
 ## Options
 
+# Default command
+# export FZF_DEFAULT_COMMAND=""
+
 # Default options
 #   TODO: pbcopy only works on macOS
 #         Ctrl-\ does not work on WSL
