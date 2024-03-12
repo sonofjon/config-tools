@@ -35,9 +35,9 @@ export FZF_CTRL_T_OPTS="
   --bind 'ctrl-d:reload(find * -type d)'
   --bind 'ctrl-f:reload(find * -type f)'
   --bind 'ctrl-g:reload(eval "$FZF_DEFAULT_COMMAND")'
-  --bind 'ctrl-s:become(emacs -nw {})'
-  --bind 'ctrl-v:become(vim {} < /dev/tty > /dev/tty)'
   --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
+  # --bind 'ctrl-s:become(emacs -nw {})'
+  # --bind 'ctrl-v:become(vim {} < /dev/tty > /dev/tty)'
 
 # Alt-C options
 export FZF_ALT_C_OPTS="
