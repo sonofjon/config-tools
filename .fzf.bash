@@ -8,6 +8,7 @@
 #         Ctrl-\ does not work on WSL
 #         Completion after aliases: ll, em
 export FZF_DEFAULT_OPTS="
+  --color=gutter:-1,pointer:7
   --exact
   --height=10
   --info=hidden
