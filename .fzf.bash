@@ -15,7 +15,7 @@ export FZF_DEFAULT_OPTS="
   --layout=reverse
   --preview 'echo {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
-  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
+  --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
 
 # Ctrl-R options
 #   TODO: Fix prompt (note that FZF_CTRL_R_OPTS is evaluated only once!)
@@ -45,7 +45,7 @@ export FZF_CTRL_T_OPTS="
   --bind 'ctrl-g:reload(eval "$FZF_DEFAULT_COMMAND")'
   --bind 'ctrl-s:become(emacs -nw {})'
   --bind 'ctrl-v:become(vim {} < /dev/tty > /dev/tty)'
-  --bind 'ctrl-y:execute-silent(echo -n {1..} | pbcopy)+abort'"
+  --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
 
 # Alt-C options
 export FZF_ALT_C_OPTS="
@@ -53,7 +53,7 @@ export FZF_ALT_C_OPTS="
   --height=10
   --info=hidden
   --layout=reverse
-  --bind 'ctrl-y:execute-silent(echo -n {1..} | pbcopy)+abort'"
+  --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
 
 # Completion trigger sequence
 # export FZF_COMPLETION_TRIGGER='~~'
