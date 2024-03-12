@@ -22,10 +22,6 @@ export FZF_DEFAULT_OPTS="
 #         Toggle hidden files
 #         Execute command immediately (without editing)
 export FZF_CTRL_R_OPTS="
-  --exact
-  --height=10
-  --info=hidden
-  --layout=reverse
   --nth=2..
   --prompt='$USER at `hostname -s` in $(pwd | sed "s,$HOME,~,g")$ '
   --preview 'echo {}' --preview-window down:3:hidden:wrap
@@ -34,10 +30,6 @@ export FZF_CTRL_R_OPTS="
 
 # Ctrl-T options
 export FZF_CTRL_T_OPTS="
-  --exact
-  --height=10
-  --info=hidden
-  --layout=reverse
   --preview 'cat {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-d:reload(find * -type d)'
@@ -49,10 +41,6 @@ export FZF_CTRL_T_OPTS="
 
 # Alt-C options
 export FZF_ALT_C_OPTS="
-  --exact
-  --height=10
-  --info=hidden
-  --layout=reverse
   --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
 
 # Completion trigger sequence
