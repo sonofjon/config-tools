@@ -23,10 +23,12 @@ export FZF_DEFAULT_OPTS="
 #         Execute command immediately (without editing)
 export FZF_CTRL_R_OPTS="
   --nth=2..
+  --no-sort
   --prompt='$USER at `hostname -s` in $(pwd | sed "s,$HOME,~,g")$ '
   --preview 'echo {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
+  # --tiebreak=index
 
 # Ctrl-T options
 export FZF_CTRL_T_OPTS="
