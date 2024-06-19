@@ -10,7 +10,13 @@
 
 # Specify highlighting theme
 #    Run `bat --list-themes` for a list of all available themes
-#--theme="TwoDark"
+# --theme="TwoDark"
+--theme="OneHalfDark"
+# --theme="OneHalfLight"
+# --theme="Solarized (dark)"
+# --theme="Solarized (light)"
+# --theme="gruvbox-dark"
+# --theme="gruvbox-light"
 
 # Use italic text on the terminal
 #--italic-text=always
