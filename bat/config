@@ -2,6 +2,12 @@
 # a command-line option that you want to pass to `bat` by default. You can
 # Run `bat --help` to get a list of all possible configuration options.
 
+# Define style
+#   Show line numbers, Git modifications and file header (but no grid)
+# --style="numbers,changes,header"
+#   No decorations
+--style=plain
+
 # Specify highlighting theme
 #    Run `bat --list-themes` for a list of all available themes
 #--theme="TwoDark"
