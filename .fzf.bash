@@ -5,7 +5,7 @@
 
 # Default options
 #   TODO: pbcopy only works on macOS
-#         Ctrl-\ does not work on WSL
+#         Ctrl-/ does not work on WSL
 #         Completion after aliases: ll, em
 export FZF_DEFAULT_OPTS="
   --color=gutter:-1,pointer:7
@@ -16,6 +16,8 @@ export FZF_DEFAULT_OPTS="
   --preview 'echo {}' --preview-window down:3:hidden:wrap
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {} | pbcopy)+abort'"
+
+# PS1_ESCAPED=$(printf '%q' "$PS1")
 
 # Ctrl-R options
 #   TODO: Fix prompt (note that FZF_CTRL_R_OPTS is evaluated only once!)
@@ -29,6 +31,8 @@ export FZF_CTRL_R_OPTS="
   --bind 'ctrl-/:toggle-preview'
   --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
   # --tiebreak=index
+  # --ansi --prompt='$PS1_ESCAPED'
+  # --ansi --prompt=$(printf '%q' "$PS1")"
 
 # Ctrl-T options
 export FZF_CTRL_T_OPTS="
